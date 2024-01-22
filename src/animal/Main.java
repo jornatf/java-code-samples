@@ -7,7 +7,7 @@ public class Main {
     Dog dog = new Dog("Roger", 4);
 
     // Display total animals
-    System.out.println("There are " + Animal.count + " animal(s)");
+    System.out.println("There are " + Animal.getCount() + " animal(s)");
 
     // Random actions
     cat.meow();

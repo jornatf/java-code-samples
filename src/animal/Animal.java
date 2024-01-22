@@ -7,7 +7,7 @@ public class Animal {
   private int age;
   private String name;
   protected String type;
-  public static int count;
+  private static int count;
 
   public Animal(String name, int age) {
     this.name = name;
