@@ -10,7 +10,7 @@ public class Cat extends Animal {
     printAnimal();
   }
 
-  public void meow() {
-    System.out.println("Meow!");
+  public void communicate() {
+    printVocalInteraction("MEOW!");
   }
 }

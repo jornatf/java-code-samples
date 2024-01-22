@@ -10,12 +10,12 @@ public class Main {
     System.out.println("There are " + Animal.getCount() + " animal(s)");
 
     // Random actions
-    cat.meow();
-    dog.bark();
+    cat.communicate();
+    dog.communicate();
     cat.eat();
     dog.move();
     cat.move();
-    dog.bark();
+    dog.communicate();
     dog.eat();
   }
 }

@@ -3,7 +3,7 @@ package animal;
 /**
  * Parent class to create an animal.
  */
-public class Animal {
+abstract public class Animal {
   private int age;
   private String name;
   protected String type;
@@ -25,6 +25,11 @@ public class Animal {
     System.out.println(str);
   }
 
+  protected void printVocalInteraction(String value) {
+    String str = String.format("%s: \"%s\"", this.name, value);
+    System.out.println(str);
+  }
+
   public void move() {
     printAction("moving");
   }
@@ -33,11 +38,18 @@ public class Animal {
     printAction("eating");
   }
 
+  abstract public void communicate();
+
+
   private static void refreshCount() {
     count++;
   }
 
   public static int getCount() {
     return count;
+  }
+
+  public String getName() {
+    return this.name;
   }
 }
