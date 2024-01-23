@@ -10,15 +10,15 @@ public class RandomString {
   }
 
   static String randomStr(int nbChar) {
-    String str = "";
+    StringBuilder str = new StringBuilder();
     String alphaNum = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
     for (int i = 0; i < nbChar; i++) {
       int randomIndex = randomNumber(alphaNum.length());
       char randomChar = alphaNum.charAt(randomIndex);
-      str += randomChar;
+      str.append(randomChar);
     }
 
-    return str;
+    return str.toString();
   }
 }
